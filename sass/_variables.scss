@@ -1,0 +1,21 @@
+// breakpoints
+$breakpoint-small-width: max-width 400px;
+$breakpoint-medium-width: max-width 900px;
+$breakpoint-normal-width: max-width 1700px;
+$breakpoint-large-width: max-width 2000px;
+$breakpoint-huge-width: max-width 2600px;
+
+// fonts
+$panel-font: 'Antic Slab', "Georgia", serif;
+$header-font: 'Dawning of a New Day', "Garamond";
+$body-font: 'Muli', "Trebuchet MS";
+
+// colors
+$link: #6699CC;
+$gray: #A2A9AF;
+$link-hover: #C3E4ED;
+$nav: #3F3F3F;
+$proj: #BDBDBD;
+
+$linktp: rgba(102, 153, 204, 0.05);
+$graytp: rgba(162,169,175, 0.5);

@@ -1,0 +1,483 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/*  Syntax Quick Reference
+  --------------------------
+  column($ratios: 1, $offset: 0, $cycle: 0, $uncycle: 0, $gutter: $jeet-gutter)
+  span($ratio: 1, $offset: 0)
+  shift($ratios: 0, $col_or_span: column, $gutter: $jeet-gutter)
+  unshift()
+  edit()
+  center($max_width: 1410px, $pad: 0)
+  stack($pad: 0, $align: false)
+  unstack()
+  align($direction: both)
+  cf()
+*/
+@media (max-width: 400px) {
+  body {
+    overflow-x: hidden;
+  }
+}
+
+#side {
+  font-family: "Antic Slab", "Georgia", serif;
+  font-size: 1.8em;
+  color: #a2a9af;
+  *zoom: 1;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  display: table;
+  margin: 0 auto;
+  background-image: url(../images/side.png);
+  background-position: center top;
+  background-size: cover;
+  z-index: 600;
+  position: fixed;
+  height: 100%;
+  width: 20%;
+  overflow-x: hidden;
+  text-align: right;
+}
+#side:before, #side:after {
+  content: '';
+  display: table;
+}
+#side:after {
+  clear: both;
+}
+#side #panel {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  display: table;
+  margin: 0 auto;
+  width: 100%;
+  position: relative;
+  z-index: 5;
+  line-height: 130%;
+  margin-top: 20%;
+  margin-left: -20%;
+}
+#side #panel h2 {
+  font-family: "Antic Slab", "Georgia", serif;
+  font-size: 0.8em;
+  color: #a2a9af;
+  display: none;
+}
+#side #panel a.menu {
+  font-weight: bold;
+}
+#side #panel a.menu:link, #side #panel a.menu:visited {
+  text-decoration: none;
+  color: #6699cc;
+}
+#side #panel a.menu:hover {
+  color: #c3e4ed;
+}
+@media (max-width: 900px) {
+  #side {
+    *zoom: 1;
+    float: left;
+    clear: none;
+    padding-left: 0;
+    padding-right: 0;
+    text-align: inherit;
+    width: 100%;
+    margin-left: 0%;
+    margin-right: 0%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 10px;
+    background: transparent;
+    margin: 0 auto;
+    padding: 0;
+    vertical-align: middle;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+  #side:before, #side:after {
+    content: '';
+    display: table;
+  }
+  #side:after {
+    clear: both;
+  }
+  #side ul {
+    position: absolute;
+    visibility: hidden;
+    background-color: white;
+    opacity: 0.8;
+    width: 100%;
+  }
+  #side .out {
+    visibility: visible;
+  }
+  #side .about, #side .projects, #side .resume, #side .contact {
+    float: none;
+    display: default;
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    font-family: "Antic Slab", "Georgia", serif;
+    font-size: 0.5em;
+    color: #a2a9af;
+  }
+  #side .about a:link, #side .about a:visited, #side .projects a:link, #side .projects a:visited, #side .resume a:link, #side .resume a:visited, #side .contact a:link, #side .contact a:visited {
+    color: white;
+  }
+  #side .about a:hover, #side .projects a:hover, #side .resume a:hover, #side .contact a:hover {
+    background-color: white;
+  }
+  #side #panel {
+    margin: 0 auto;
+  }
+  #side #panel h2 {
+    text-align: center;
+    display: inherit;
+    z-index: 900;
+    height: 5%;
+    width: 100%;
+    padding: 0px;
+    margin-top: 0px;
+    background-color: #6699cc;
+    opacity: 0.8;
+  }
+  #side #panel h2 a {
+    text-decoration: none;
+  }
+  #side #panel h2 a:link, #side #panel h2 a:visited {
+    color: #3f3f3f;
+  }
+  #side #panel h2 a:hover {
+    color: white;
+  }
+}
+
+#container {
+  position: relative;
+  *zoom: 1;
+  float: left;
+  clear: none;
+  padding-left: 0;
+  padding-right: 0;
+  text-align: inherit;
+  width: 80%;
+  margin-left: 0%;
+  margin-right: 0%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0px;
+}
+#container:before, #container:after {
+  content: '';
+  display: table;
+}
+#container:after {
+  clear: both;
+}
+@media (max-width: 900px) {
+  #container {
+    *zoom: 1;
+    float: left;
+    clear: none;
+    padding-left: 0;
+    padding-right: 0;
+    text-align: inherit;
+    width: 100%;
+    margin-left: 0%;
+    margin-right: 0%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 10px;
+  }
+  #container:before, #container:after {
+    content: '';
+    display: table;
+  }
+  #container:after {
+    clear: both;
+  }
+}
+
+table {
+  *zoom: 1;
+  width: auto;
+  max-width: 1410px;
+  float: none;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 0;
+  padding-right: 0;
+  width: 80%;
+  margin: 0 auto;
+  display: inline-block;
+}
+table:before, table:after {
+  content: '';
+  display: table;
+}
+table:after {
+  clear: both;
+}
+
+dl {
+  font-family: "Muli", "Trebuchet MS";
+  font-size: 1em;
+  color: #a2a9af;
+  line-height: 140%;
+  margin: -20px 20px 40px 0px;
+  padding: 30px;
+}
+dl a:hover {
+  color: #c3e4ed;
+}
+@media (max-width: 400px) {
+  dl {
+    position: relative;
+    left: -10px;
+  }
+}
+
+h2 {
+  font-family: "Dawning of a New Day", "Garamond";
+  font-size: 2.2em;
+  color: #6699cc;
+  font-weight: bold;
+  margin-top: 5px;
+  padding: 40px 30px 0 30px;
+}
+
+.bold {
+  color: black;
+  font-weight: bold;
+}
+
+dd {
+  margin-left: 10px;
+}
+
+#projects > td > dl {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 30px;
+  margin: 1%;
+  height: auto;
+  width: 48%;
+  float: left;
+  color: #a2a9af;
+}
+#projects > td > dl .txt {
+  height: auto;
+  display: inline-block;
+}
+#projects > td > dl dd {
+  font-size: 0.75em;
+}
+#projects > td > dl #pdcps {
+  background-image: url("../images/pdcps.png");
+  background-repeat: no-repeat;
+}
+#projects > td > dl #pdclamp {
+  background-image: url("../images/pdclamp.png");
+  background-repeat: no-repeat;
+}
+#projects > td > dl #tdchrome {
+  background-image: url("../images/tdchrome.png");
+  background-repeat: no-repeat;
+}
+#projects > td > dl #mhacks {
+  background-image: url("../images/mhacks.png");
+  background-repeat: no-repeat;
+}
+#projects > td > dl #wtl {
+  background-image: url("../images/wtl.png");
+  background-repeat: no-repeat;
+}
+#projects > td > dl #yodel {
+  background-image: url("../images/yodel.png");
+  background-repeat: no-repeat;
+}
+#projects > td > dl #phitcircle {
+  background-image: url("../images/phitcircle.png");
+  background-repeat: no-repeat;
+}
+#projects > td > dl .img {
+  margin-bottom: 10px;
+  margin-top: 10px;
+  background-image: url("../images/pdclamp.png");
+  background-size: contain;
+  width: 100%;
+  height: 0;
+  padding-top: 52.95008%;
+}
+@media (max-width: 2600px) {
+  #projects > td > dl {
+    height: 750px;
+    border: solid;
+    border-color: #a2a9af;
+  }
+}
+@media (max-width: 2000px) {
+  #projects > td > dl {
+    height: 650px;
+  }
+}
+@media (max-width: 1700px) {
+  #projects > td > dl {
+    height: 560px;
+  }
+}
+@media (max-width: 900px) {
+  #projects > td > dl {
+    *zoom: 1;
+    float: left;
+    clear: none;
+    padding-left: 0;
+    padding-right: 0;
+    text-align: inherit;
+    width: 100%;
+    margin-left: 0%;
+    margin-right: 0%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 30px;
+    border: none;
+    height: auto;
+  }
+  #projects > td > dl:before, #projects > td > dl:after {
+    content: '';
+    display: table;
+  }
+  #projects > td > dl:after {
+    clear: both;
+  }
+}
+@media (max-width: 400px) {
+  #projects > td > dl {
+    min-height: 150px;
+  }
+  #projects > td > dl .txt {
+    min-height: 50px;
+  }
+  #projects > td > dl .img {
+    padding-top: 150px;
+  }
+}
+
+#resume > td dl {
+  margin-left: 5%;
+  text-align: left;
+  width: 50%;
+  background-color: rgba(102, 153, 204, 0.05);
+}
+@media (max-width: 900px) {
+  #resume > td dl {
+    width: 90%;
+  }
+}
+@media (max-width: 400px) {
+  #resume > td dl {
+    width: 85%;
+    position: relative;
+    left: -5px;
+  }
+}
+#resume > td dl dd {
+  margin-left: 0px;
+  font-size: 0.8em;
+}
+#resume > td h2 {
+  margin-bottom: 30px;
+}
+
+.skills {
+  font-size: 0.6em;
+  margin-left: 10px;
+  font-style: italic;
+}
+
+.links {
+  font-size: 0.7em;
+  margin-left: 10px;
+}
+
+.space {
+  height: 400px;
+  width: 300px;
+}
+
+a {
+  z-index: 999;
+  position: relative;
+}
+
+body {
+  font-size: 2em;
+}
+@media (max-width: 2600px) {
+  body {
+    font-size: 1em;
+  }
+}

@@ -1,0 +1,304 @@
+@import "compass/reset";
+@import "variables";
+@import "breakpoint";
+@import "compass";
+@import "../jeet/index";
+
+
+@mixin boxes($colfrac, $pd) {
+  @include span($colfrac);
+  @include box-sizing(border-box);
+  padding: $pd;
+}
+
+@mixin font($ff, $sz, $c) {
+  font-family: $ff;
+  font-size: $sz;
+  color: $c;
+}
+
+@mixin insert($link) {
+  background-image: url($link);
+  background-repeat: no-repeat;
+}
+
+@mixin div-size($url) {     
+  background-image: url($url);     
+  background-size: contain;        
+  width: 100%;     
+  height: 0;     
+  padding-top: percentage(image-height($url) / image-width($url));
+}
+
+body {
+  @include breakpoint($breakpoint-small-width) {
+    overflow-x: hidden;
+  }
+}
+
+
+#side {
+  @include font($panel-font, 1.8em, $gray);
+  @include cf();
+  @include box-sizing(border-box);
+  display: table;
+  margin: 0 auto; 
+  //background: $graytp;
+  background-image: url(../images/side.png);
+  background-position: center top;
+  background-size: cover;
+  z-index: 600;
+  position: fixed;
+  height: 100%;
+  width: 20%;
+  overflow-x: hidden;
+  text-align: right;
+  #panel {
+    @include box-sizing(border-box);
+    display: table;
+    margin: 0 auto;
+    width: 100%;
+    position: relative;
+    z-index: 5;
+    line-height: 130%; 
+    margin-top: 20%;
+    margin-left: -20%;
+    h2 {
+      @include font($panel-font, 0.8em, $gray);
+      display: none;
+    }
+    a.menu {
+      font-weight: bold;
+    }
+    a.menu:link, a.menu:visited {
+      text-decoration: none;
+      color: $link;
+    }
+    a.menu:hover {
+      color: $link-hover;
+    }
+  }
+  @include breakpoint($breakpoint-medium-width) {
+    @include boxes(1/1, 10px);
+    background: transparent;
+    margin: 0 auto;
+    padding: 0;
+    vertical-align: middle;
+    position: fixed;
+    top: 0;
+    left: 0;
+    ul {
+      position: absolute;
+      visibility: hidden;
+      background-color: white;
+      opacity: 0.8;
+      width: 100%;
+    }
+    .out {
+      visibility: visible;
+    }
+    .about, .projects, .resume, .contact {
+      float: none;
+      display: default;
+      margin: 0; 
+      width: 100%;
+      text-align: center;
+      @include font($panel-font, 0.5em, $gray);
+      a:link, a:visited {
+        color: white;
+      }
+      a:hover {
+        background-color: white;
+      }
+    }
+    #panel {
+      margin: 0 auto;
+      h2 {
+        text-align: center;
+        display: inherit;
+        z-index: 900;
+        height: 5%;
+        width: 100%;
+        padding: 0px;
+        margin-top: 0px;
+        background-color: $link;
+        opacity: 0.8;
+        a {
+          text-decoration: none;
+        }
+        a:link, a:visited {
+          color: $nav;
+        }
+        a:hover {
+          color: white;
+        }
+      }
+    }
+  }
+}
+
+#container {
+  position: relative; 
+  @include boxes(4/5, 0px);
+  @include breakpoint($breakpoint-medium-width) {
+    @include boxes(1/1, 10px);
+  }
+}
+
+table {
+  @include center();
+  width: 80%;
+  margin: 0 auto;
+  display: inline-block;
+}
+
+dl {
+  @include font($body-font, 1em, $gray);
+  line-height: 140%;
+  margin: -20px 20px 40px 0px;
+  padding: 30px;
+  a:hover {
+    color: $link-hover;
+  }
+  @include breakpoint($breakpoint-small-width) {
+    position: relative;
+    left: -10px;
+  }
+}
+
+h2 {
+  @include font($header-font, 2.2em, $link);
+  font-weight: bold;
+  margin-top: 5px;
+  padding: 40px 30px 0 30px;
+}
+
+.bold {
+  color: black;
+  font-weight: bold;
+}
+
+dd {
+  margin-left: 10px;
+}
+
+#projects > td > dl {
+  @include box-sizing(border-box);
+  padding: 30px;
+  margin: 1%;
+  height: auto;
+  width: 48%;
+  float: left;
+  color: $gray;
+  .txt {
+    height: auto;
+    display: inline-block;
+  }
+  dd {
+    font-size: 0.75em;
+  }
+  #pdcps {
+    @include insert('../images/pdcps.png');
+  }
+  #pdclamp {
+    @include insert('../images/pdclamp.png');
+  }
+  #tdchrome {
+    @include insert('../images/tdchrome.png');
+  }
+  #mhacks {
+    @include insert('../images/mhacks.png');
+  }
+  #wtl {
+    @include insert('../images/wtl.png');
+  }
+  #yodel {
+    @include insert('../images/yodel.png');
+  }
+  #phitcircle {
+    @include insert('../images/phitcircle.png');
+  }
+  .img {
+    margin-bottom: 10px;
+    margin-top: 10px;
+    @include div-size('../images/pdclamp.png');
+  }
+  @include breakpoint($breakpoint-huge-width) {
+    height: 750px;
+    border: solid;
+    border-color: $gray;
+  }
+  @include breakpoint($breakpoint-large-width) {
+    height: 650px;
+  }
+  @include breakpoint($breakpoint-normal-width) {
+    height: 560px;
+  }
+  @include breakpoint($breakpoint-medium-width) {
+    @include boxes(1/1, 30px);
+    border: none;
+    height: auto;
+  }
+  @include breakpoint($breakpoint-small-width) {
+    min-height: 150px;
+    .txt {
+      min-height: 50px;
+    }
+    .img {
+      padding-top: 150px;
+    }
+  }
+}
+
+#resume > td {
+  & dl {
+    margin-left: 5%;
+    text-align: left;
+    width: 50%;
+    background-color: $linktp;
+    @include breakpoint($breakpoint-medium-width) {
+      width: 90%;
+    }
+    @include breakpoint($breakpoint-small-width) {
+      width: 85%;
+      position: relative;
+      left: -5px;
+    }
+    dd {
+      margin-left: 0px;
+      font-size: 0.8em;
+    }
+  }
+  & h2 {
+    margin-bottom: 30px;
+  }
+
+}
+
+.skills {
+  font-size: 0.6em;
+  margin-left: 10px;
+  font-style: italic;
+}
+
+.links {
+  font-size: 0.7em;
+  margin-left: 10px;
+}
+
+.space {
+  height: 400px;
+  width: 300px;
+}
+
+a {
+  z-index: 999;
+  position: relative;
+}
+
+body {
+  font-size: 2em;
+  @include breakpoint($breakpoint-huge-width) {
+    font-size: 1em;
+  }
+}

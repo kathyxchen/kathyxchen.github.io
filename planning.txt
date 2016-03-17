@@ -1,0 +1,16 @@
+Intro:
+  Purpose
+  Unit Descriptions > can link to the units.
+  Why concepts...?
+(Introduction page is analogous to an "About Us")
+Can put this on the landing page.
+  Unit Description: --> also be specified at the beginning of each unit.
+  Pagination + input shot # to goto.
+    Unit 1: The Norms of Classical Narrative Cinema
+    (Go to next unit at the end of this one)
+    Unit 2: The Alternative Strategies of Yasujiro Ozu
+    (Go to next unit)
+    Unit 3: The Alternative Strategies of Mizoguchi Kenji
+    (Go to Caveat)
+  Caveat
+  (Return to home)

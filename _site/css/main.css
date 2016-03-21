@@ -485,21 +485,22 @@ hr {
     animation: moveUp .65s ease forwards;
 }
 @-webkit-keyframes moveUp {
-    to {
+  to {
     -webkit-transform: translateY(0);
     opacity: 1;
-}
+  }
 }@-moz-keyframes moveUp {
-    to {
+  to {
     -moz-transform: translateY(0);
     opacity: 1;
-}
+  }
 }@keyframes moveUp {
-    to {
+  to {
     transform: translateY(0);
     opacity: 1;
+  }
 }
-}#chartwrap {
+#chartwrap {
     width: 100%}
 #chartwrap .container {
     margin-left: 0;
@@ -606,6 +607,10 @@ hr {
 .mastfoot {
   color: #999; /* IE8 proofing */
   color: rgba(255,255,255,.5);
+  position: fixed;
+  top: 95%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 /*

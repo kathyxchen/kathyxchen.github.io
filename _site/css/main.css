@@ -600,6 +600,10 @@ hr {
   transform: translate(-50%, -50%);
 }
 
+.in-panel {
+    font-size: 13pt;
+}
+
 /*
  * Footer
  */

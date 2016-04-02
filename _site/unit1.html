@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>EALC Unit I</title>
+  <title>Unit 1</title>
   <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?">
   <link rel="stylesheet" type="text/css" href="/bootstrap-3.3.6-dist/css/bootstrap.min.css"/>
   <!-- Custom styles for this template -->
@@ -44,14 +44,29 @@
 </nav>
 
 
-        <h1>EALC Unit I</h1>
-<ul class="posts">
+        <div class="container center">
+  <div class="row">
+    <div class="content unit" id="u1-1">
+      <img src="images-murphy/u1-1.png">
+    </div>
+    <div class="content unit" id="u1-2">
+      <img src="images-murphy/u1-2.png">
+    </div>
+    <ul id="pagination-demo" class="pagination-sm"></ul>
+  </div>
+</div>
 
-  
-    <li><span>30 Apr 2014</span> &raquo; <a href="/blog/2014/04/30/hank-quinlan-site-launched" title="Hank Quinlan, Horrible Cop, Launches Site">Hank Quinlan, Horrible Cop, Launches Site</a></li>
-  
-
-</ul>
+<script>
+$('#pagination-demo').twbsPagination({
+        totalPages: 35,
+        visiblePages: 10,
+        onPageClick: function (event, page) {
+          $(".unit").hide();
+          $("#u1-" + page).show();
+          console.log('Page ' + page);
+        }
+    });
+</script>
 
 
       </div>

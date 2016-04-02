@@ -1,0 +1,29 @@
+---
+layout: default
+title: Unit 1
+---
+
+
+<div class="container center">
+  <div class="row">
+    <div class="content unit" id="u1-1">
+      <img src="images-murphy/u1-1.png">
+    </div>
+    <div class="content unit" id="u1-2">
+      <img src="images-murphy/u1-2.png">
+    </div>
+    <ul id="pagination-demo" class="pagination-sm"></ul>
+  </div>
+</div>
+
+<script>
+$('#pagination-demo').twbsPagination({
+        totalPages: 35,
+        visiblePages: 10,
+        onPageClick: function (event, page) {
+          $(".unit").hide();
+          $("#u1-" + page).show();
+          console.log('Page ' + page);
+        }
+    });
+</script>

@@ -1,0 +1,212 @@
+<html>
+<head>
+<link href="css/goslim.css" type="text/css" rel="stylesheet" media="screen">
+</head>
+<body>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="js/d3.v2.min.js"></script>
+<script type="text/javascript" src="js/slim_onto.js"></script>
+
+<a href="#" id="add_rule">Add a new rule</a>
+
+<ul><form id="rule_form">
+<input type="submit" value="Apply Rule" />
+<li><input class="rule" value="d.summary.slim" /><input class="class" value="slim"></li>
+<li><input class="rule" value="d.summary.d50" /><input class="class" value="prune"></li>
+</form></ul>
+
+<ul><div id="pruned_list">
+</div></ul>
+
+<div style="width:28800px;height:28800px" id="figure" class='gallery'> </div>
+<script type="text/javascript">
+
+function getCSS(ruleName) {               // Return requested style obejct
+   ruleName=ruleName.toLowerCase();                       // Convert test string to lower case.
+   rule = null;
+   attrs = [];
+   if (document.styleSheets) {                            // If browser can play with stylesheets
+      for (var i=0; i<document.styleSheets.length; i++) { // For each stylesheet
+         var styleSheet=document.styleSheets[i];          // Get the current Stylesheet
+         console.log(styleSheet)
+         var ii=0;                                        // Initialize subCounter.
+         var cssRule=false;                               // Initialize cssRule.
+         do {                                             // For each rule in stylesheet
+            if (styleSheet.cssRules) {                    // Browser uses cssRules?
+               cssRule = styleSheet.cssRules[ii];         // Yes --Mozilla Style
+            } else if (styleSheet.rules) {                                      // Browser usses rules?
+               cssRule = styleSheet.rules[ii];            // Yes IE style.
+            }                                             // End IE check.
+            if (cssRule)  {                               // If we found a rule...
+               if (cssRule.selectorText.toLowerCase()==ruleName) { //  match ruleName?
+                    var rules = String(cssRule.style.cssText);
+                    var start = 0
+                    var end = 0
+                    do {
+                        var end = rules.indexOf(':', start);
+                        if( end > -1 ) {
+                            rule = rules.substring(start, end);                      // return the style object.
+                            start = rules.indexOf('; ',end)+2;
+                            attrs.push(rule)
+                        }
+                    } while( end > -1 )
+               }                                          // End found rule name
+            }                                             // end found cssRule
+            ii++;                                         // Increment sub-counter
+         } while (cssRule)                                // end While loop
+      }                                                   // end For loop
+   }                                                      // end styleSheet ability check
+   return attrs;                                          // we found NOTHING!
+}
+
+
+function getCSSRule(ruleName, attr) {               // Return requested style obejct
+   ruleName=ruleName.toLowerCase();                       // Convert test string to lower case.
+   rule = null;
+   if (document.styleSheets) {                            // If browser can play with stylesheets
+      for (var i=0; i<document.styleSheets.length; i++) { // For each stylesheet
+         var styleSheet=document.styleSheets[i];          // Get the current Stylesheet
+         console.log(styleSheet)
+         var ii=0;                                        // Initialize subCounter.
+         var cssRule=false;                               // Initialize cssRule.
+         do {                                             // For each rule in stylesheet
+            if (styleSheet.cssRules) {                    // Browser uses cssRules?
+               cssRule = styleSheet.cssRules[ii];         // Yes --Mozilla Style
+            } else if (styleSheet.rules) {                                      // Browser usses rules?
+               cssRule = styleSheet.rules[ii];            // Yes IE style.
+            }                                             // End IE check.
+            if (cssRule)  {                               // If we found a rule...
+               if (cssRule.selectorText.toLowerCase()==ruleName) { //  match ruleName?
+                    var rules = String(cssRule.style.cssText);
+                    var start = rules.indexOf(attr+':') + attr.length + 1;
+                    var end = rules.indexOf(';', start);
+                    rule = rules.substring(start+1, end);                      // return the style object.
+               }                                          // End found rule name
+            }                                             // end found cssRule
+            ii++;                                         // Increment sub-counter
+         } while (cssRule)                                // end While loop
+      }                                                   // end For loop
+   }                                                      // end styleSheet ability check
+   if ( rule ) return rule;
+   return false;                                          // we found NOTHING!
+}
+
+function setCSS(obj, class_str) {
+    var attrs = getCSS(class_str);
+    for( i in attrs ) {
+        var attr = attrs[i];
+        obj.attr(attr, getCSSRule(class_str, attr))
+    }
+}
+
+function next_rule() {
+  return "<li><input class=\"rule\" /><input class=\"class\" /></li>"
+}
+function add_rule() {
+  form = $('#rule_form');
+  form.append(next_rule());
+  return false;
+}
+function apply_rules() {
+  var rule_array = [];
+  $('#rule_form li').each(function() {
+    rchild = this.firstChild;
+    cchild = this.lastChild;
+    if (rchild.value && cchild.value){
+      rule_array.push('(' + rchild.value + ' ? "' + cchild.value + ' " : "" )')
+    }
+  });
+  $('svg').remove();
+  draw_hierarchy( rule_array );
+  return false;
+}
+
+function draw_hierarchy( rules ) {
+  var pruned_terms = [];
+
+
+  var r = 28800/2;
+
+  var color = d3.scale.linear()
+    .domain([0,1])
+    .range(["black", "white"]);
+
+  var size = d3.scale.log()
+    .domain([10,12000])
+    .range([3, 9]);
+
+  var tree = d3.layout.tree()
+    .size([360, r-500])
+    .separation(function(a, b) { return (a.parent == b.parent ? 1 : 2) / a.depth; });
+
+  var diagonal = d3.svg.diagonal.radial()
+    .projection(function(d) { return [d.y, d.x / 180 * Math.PI]; });
+
+
+  var vis = d3.select("#figure").append("svg:svg")
+    .attr("width", r * 2)
+    .attr("height", r * 2)
+    .attr("version", 1.1)
+    .attr("xmlns", "http://www.w3.org/2000/svg")
+    .append("svg:g")
+    .attr("transform", "translate(" + r + "," + r + ")");
+
+    var nodes = tree.nodes(ontology);
+
+    var link = vis.selectAll("path.link")
+      .data(tree.links(nodes))
+    .enter().append("svg:path")
+      .attr("class", "link")
+      .attr("d", diagonal);
+    setCSS(link, '.link')
+
+    var node = vis.selectAll("g.node")
+      .data(nodes)
+    .enter().append("svg:g")
+      .attr("class", function(d) {
+        class_str = "node";
+        for (var i = 0; i < rules.length; i+= 1) {
+           class_str = eval(rules[i]) + class_str;
+
+           if(eval(rules[i]).indexOf("list") > -1){
+           	pruned_terms.push([d.summary.go_id, d.name])
+           }
+
+        }
+        return class_str;
+      })
+      .attr("transform", function(d) {return "rotate(" + (d.x - 90) + ")translate(" + d.y + ")"; })
+    setCSS(node, '.node')
+
+    list =  $('#pruned_list');
+    list.empty();
+    list.append("<li><b>list of pruned terms</b></li>")
+    for (var i=0; i<pruned_terms.length; i++){
+  		list.append("<li><a href=\"http://amigo.geneontology.org/cgi-bin/amigo/term_details?term="+pruned_terms[i][0]+"\" target=\"_blank\">"+pruned_terms[i][1]+"</a></li>");
+
+    }
+    list.val();
+
+
+    var circles = node.append("svg:circle")
+      .style("fill", function(d) { return color(1-(d.summary.max.d/d.summary.max.t))})
+      .attr("r", function(d) { return Math.log(d.summary.max.t) * 5.0 });
+    setCSS(circles, '.node circle')
+
+    var text = node.append("svg:text")
+      .attr("dx", function(d) { return d.x < 180 ? 12 : -12; })
+      .attr("dy", "0.3em")
+      .attr("text-anchor", function(d) { return d.x < 180 ? "start" : "end"; })
+      .attr("transform", function(d) { return d.x < 180 ? null : "rotate(180)"; })
+      .text(function(d) { return d.name; });
+}
+
+jQuery(document).ready(function() {
+  var pruned_terms = [];
+  $('#add_rule').click(add_rule);
+  $('#rule_form').submit(apply_rules);
+  apply_rules();
+});
+</script>
+</body>
+</html>

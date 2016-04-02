@@ -1,0 +1,118 @@
+/*
+DJANGO Admin styles
+*/
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    font-family: "Lucida Grande","DejaVu Sans","Bitstream Vera Sans",Verdana,Arial,sans-serif;
+    color: #333;
+    background: #fff;
+}
+
+#container {
+    width: 95%;
+	min-width: 600px;
+    margin: 10px auto;
+}
+
+#content {
+    width: 90%;
+    margin: 10px auto;
+}
+
+
+/* HEADER */
+#header {
+    border-style: solid;
+    border-top-width: 1px;
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-bottom-width: 0px;
+    border-color: #AAAAAA;
+    background: #DDDDDD;
+    font-weight: bold;
+    width: 100%;
+    vertical-align: middle;
+    display: block;
+}
+#nav {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: inline-block;
+    background-color: #DDDDDD;
+    border-style: solid;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-top-width: 0px;
+    border-color: #AAAAAA;
+    margin-top: -20px;
+    font-weight: bold;
+
+}
+#nav ul {
+    padding: 0 50px;
+}
+#nav li {
+    float: left;
+    list-style-type: none;
+
+}
+#nav li a {
+    display: block;
+    padding: 7px 22px 7px 7px;
+}
+#logo {
+    margin-left:10px;
+    display: inline-block;
+}
+#header h1 {
+    padding: 0;
+    margin-left: 10px;
+}
+
+table {
+	width: 75%;
+	text-align: left;
+}
+
+.node circle {
+  stroke: steelblue;
+}
+
+.node {
+  font-size: 10px;
+  font: sans-serif;
+  stroke-width: 2px;
+}
+
+.link {
+  fill: none;
+  stroke: #bbb;
+  stroke-width: 2px;
+}
+
+.slim circle {
+  stroke: red;
+}
+
+.highlight circle {
+  stroke-dasharray: 5,5;
+  stroke-width: 10px;
+}
+
+.prune {
+  opacity: 0.3;
+}
+
+.selected circle {
+  stroke: #FFCC00;
+}
+
+.five {
+  opacity: 0.05;
+}

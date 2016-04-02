@@ -95,7 +95,8 @@ function setCSS(obj, class_str) {
     var attrs = getCSS(class_str);
     for( i in attrs ) {
         var attr = attrs[i];
-        obj.attr(attr, getCSSRule(class_str, attr))
+        console.log(attr);
+        obj.attr(attr, getCSSRule(class_str, attr));
     }
 }
 

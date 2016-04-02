@@ -160,7 +160,8 @@ function draw_hierarchy( rules ) {
     .enter().append("svg:path")
       .attr("class", "link")
       .attr("d", diagonal);
-    setCSS(link, '.link')
+    setCSS(link, '.link');
+    console.log("shouldn't this work?");
 
     var node = vis.selectAll("g.node")
       .data(nodes)

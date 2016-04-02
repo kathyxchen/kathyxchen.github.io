@@ -154,7 +154,6 @@ function draw_hierarchy( rules ) {
     .attr("transform", "translate(" + r + "," + r + ")");
 
     var nodes = tree.nodes(ontology);
-    console.log("shouldn't this work?");
     var link = vis.selectAll("path.link")
       .data(tree.links(nodes))
     .enter().append("svg:path")

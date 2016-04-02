@@ -118,6 +118,7 @@ function apply_rules() {
   });
   console.log("in the function");
   $('svg').remove();
+  console.log(rule_array);
   draw_hierarchy( rule_array );
   console.log("returning");
   return false;
@@ -144,7 +145,7 @@ function draw_hierarchy( rules ) {
   var diagonal = d3.svg.diagonal.radial()
     .projection(function(d) { return [d.y, d.x / 180 * Math.PI]; });
 
-
+  console.log("HI");
   var vis = d3.select("#figure").append("svg:svg")
     .attr("width", r * 2)
     .attr("height", r * 2)
@@ -178,22 +179,21 @@ function draw_hierarchy( rules ) {
         return class_str;
       })
       .attr("transform", function(d) {return "rotate(" + (d.x - 90) + ")translate(" + d.y + ")"; })
-    setCSS(node, '.node')
-
+    setCSS(node, '.node');
+    console.log("HI");
     list =  $('#pruned_list');
     list.empty();
     list.append("<li><b>list of pruned terms</b></li>")
     for (var i=0; i<pruned_terms.length; i++){
   		list.append("<li><a href=\"http://amigo.geneontology.org/cgi-bin/amigo/term_details?term="+pruned_terms[i][0]+"\" target=\"_blank\">"+pruned_terms[i][1]+"</a></li>");
-
     }
+    console.log("HI");
     list.val();
-
 
     var circles = node.append("svg:circle")
       .style("fill", function(d) { return color(1-(d.summary.max.d/d.summary.max.t))})
       .attr("r", function(d) { return Math.log(d.summary.max.t) * 5.0 });
-    setCSS(circles, '.node circle')
+    setCSS(circles, '.node circle');
 
     var text = node.append("svg:text")
       .attr("dx", function(d) { return d.x < 180 ? 12 : -12; })
@@ -201,6 +201,7 @@ function draw_hierarchy( rules ) {
       .attr("text-anchor", function(d) { return d.x < 180 ? "start" : "end"; })
       .attr("transform", function(d) { return d.x < 180 ? null : "rotate(180)"; })
       .text(function(d) { return d.name; });
+    console.log("HI");
 }
 
 jQuery(document).ready(function() {

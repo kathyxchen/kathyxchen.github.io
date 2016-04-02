@@ -144,7 +144,6 @@ function draw_hierarchy( rules ) {
   var diagonal = d3.svg.diagonal.radial()
     .projection(function(d) { return [d.y, d.x / 180 * Math.PI]; });
 
-  console.log("HI");
   var vis = d3.select("#figure").append("svg:svg")
     .attr("width", r * 2)
     .attr("height", r * 2)
@@ -159,6 +158,7 @@ function draw_hierarchy( rules ) {
     .enter().append("svg:path")
       .attr("class", "link")
       .attr("d", diagonal);
+    console.log("testing");
     setCSS(link, '.link');
     console.log("shouldn't this work?");
 

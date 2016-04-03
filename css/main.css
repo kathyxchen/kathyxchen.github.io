@@ -20,13 +20,44 @@ p {
     text-align: left;
 }
 img {
-    max-width: 100%;
+    max-width: 45%;
+    max-height: 60%;
     height: auto;
     width: auto\9; /* ie8 */
     padding: 5px;
 }
 .unit {
   display: none;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+@media (max-width: 1000px) {
+  img {
+    max-width: 60%;
+  }
+  .unit {
+    padding: 0px;
+  }
+}
+@media (max-width: 600px) {
+  img {
+    max-width: 100%;
+  }
+}
+.fcite {
+  font-size: 13px;
+  color: #16a085;
+}
+.ucontent {
+  text-align:center;
+  vertical-align: middle;
+  display: table-cell;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: bold;
+}
+.navbar {
+  margin-bottom: 5px !important;
 }
 .intro-blurb {
   padding: 15px;

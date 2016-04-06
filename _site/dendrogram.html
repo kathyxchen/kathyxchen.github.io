@@ -25,7 +25,7 @@
   <button id=save_slim>copy selected to textbox</button>
 </div>
 
-<div style="width:4000px;height:400000px" id="figure" class='gallery'> </div>
+<div style="width:1600px;height:1000px" id="figure" class='gallery'> </div>
 <script type="text/javascript">
 
 var amigo = 'http://amigo.geneontology.org/cgi-bin/amigo/term-assoc.cgi?term='
@@ -109,8 +109,8 @@ function prune_children ( d ) {
 
 function draw_hierarchy( rules ) {
 
-  var h = 400000;
-  var w = 4000;
+  var h = 1000;
+  var w = 1600;
 
   var cluster = d3.layout.tree()
     .size([h, w])

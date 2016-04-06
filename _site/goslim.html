@@ -36,7 +36,10 @@ function getCSS(ruleName) {               // Return requested style obejct
                cssRule = styleSheet.cssRules[ii];         // Yes --Mozilla Style
             } else if (styleSheet.rules) {                                      // Browser usses rules?
                cssRule = styleSheet.rules[ii];            // Yes IE style.
-            }                                             // End IE check.
+            }
+            console.log(cssRule);
+            seen = []
+                                                          // End IE check.
             if (cssRule)  {                               // If we found a rule...
                if (cssRule.selectorText.toLowerCase()==ruleName) { //  match ruleName?
                     var rules = String(cssRule.style.cssText);
@@ -44,12 +47,13 @@ function getCSS(ruleName) {               // Return requested style obejct
                     var end = 0
                     do {
                         var end = rules.indexOf(':', start);
-                        if( end > -1 ) {
+                        seen = seen.push(end)
+                        if( end > -1 && seen.indexOf(end) != -1 ) {
                             rule = rules.substring(start, end);                      // return the style object.
                             start = rules.indexOf('; ',end)+2;
                             attrs.push(rule)
                         }
-                    } while( end > -1 )
+                    } while( end > -1 && seen.indexOf(end) > -1 )
                }                                          // End found rule name
             }                                             // end found cssRule
             ii++;                                         // Increment sub-counter
@@ -92,10 +96,11 @@ function getCSSRule(ruleName, attr) {               // Return requested style ob
 }
 
 function setCSS(obj, class_str) {
+    console.log(obj + " " + class_str);
     var attrs = getCSS(class_str);
+    console.log(attrs);
     for( i in attrs ) {
         var attr = attrs[i];
-        console.log(attr);
         obj.attr(attr, getCSSRule(class_str, attr));
     }
 }

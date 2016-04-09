@@ -51,10 +51,8 @@ img {
 .ucontent {
   text-align:center;
   vertical-align: middle;
-  display: table-cell;
   font-size: 14px;
   line-height: 20px;
-  font-weight: bold;
 }
 .navbar {
   margin-bottom: 5px !important;

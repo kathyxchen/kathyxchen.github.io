@@ -26,6 +26,9 @@ img {
     width: auto\9; /* ie8 */
     padding: 5px;
 }
+.row {
+  margin-bottom: 100px;
+}
 .unit {
   display: none;
   padding-left: 50px;
@@ -53,6 +56,13 @@ img {
   vertical-align: middle;
   font-size: 14px;
   line-height: 20px;
+  padding-left: 2px;
+  padding-right: 2px;
+}
+.aside {
+  text-align: left;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 .navbar {
   margin-bottom: 5px !important;

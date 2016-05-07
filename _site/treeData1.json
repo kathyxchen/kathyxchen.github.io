@@ -1,0 +1,1374 @@
+[
+  {
+    "name": "Police Department Disposition Of Substantiated Cases By Year Of NYPD Closure 2005 - 2009.json",
+    "children": [
+
+    ],
+    "numPaths": 0,
+    "id": {
+      "timestamp": 1462567284,
+      "machineIdentifier": 12996502,
+      "processIdentifier": 19417,
+      "counter": 5554531
+    },
+    "visited": false
+  },
+  {
+    "name": "Police Department Disposition Of Substantiated Cases By Year Of NYPD Closure 2005 - 2009.json",
+    "children": [
+      {
+        "name": "<cis550bklsARRAY>0: null",
+        "parent": "Police Department Disposition Of Substantiated Cases By Year Of NYPD Closure 2005 - 2009.json",
+        "children": [
+          {
+            "name": "<cis550bklsINDEX>1: null",
+            "parent": "<cis550bklsARRAY>0: null",
+            "children": [
+              {
+                "name": "police_department_disposition: Number of Officers",
+                "parent": "<cis550bklsINDEX>1: null",
+                "children": [
+
+                ],
+                "numPaths": 0,
+                "id": {
+                  "timestamp": 1462567284,
+                  "machineIdentifier": 12996502,
+                  "processIdentifier": 19417,
+                  "counter": 5554570
+                },
+                "visited": false
+              }
+            ],
+            "numPaths": 0,
+            "id": {
+              "timestamp": 1462567284,
+              "machineIdentifier": 12996502,
+              "processIdentifier": 19417,
+              "counter": 5554534
+            },
+            "visited": false
+          }
+        ],
+        "numPaths": 0,
+        "id": {
+          "timestamp": 1462567284,
+          "machineIdentifier": 12996502,
+          "processIdentifier": 19417,
+          "counter": 5554532
+        },
+        "visited": false
+      }
+    ],
+    "numPaths": 0,
+    "id": {
+      "timestamp": 1462567284,
+      "machineIdentifier": 12996502,
+      "processIdentifier": 19417,
+      "counter": 5554531
+    },
+    "visited": false
+  },
+  {
+    "name": "Police Department Disposition Of Substantiated Cases By Year Of NYPD Closure 2005 - 2009.json",
+    "children": [
+      {
+        "name": "<cis550bklsARRAY>0: null",
+        "parent": "Police Department Disposition Of Substantiated Cases By Year Of NYPD Closure 2005 - 2009.json",
+        "children": [
+          {
+            "name": "<cis550bklsINDEX>2: null",
+            "parent": "<cis550bklsARRAY>0: null",
+            "children": [
+              {
+                "name": "police_department_disposition: Guilty after trial",
+                "parent": "<cis550bklsINDEX>2: null",
+                "children": [
+
+                ],
+                "numPaths": 0,
+                "id": {
+                  "timestamp": 1462567284,
+                  "machineIdentifier": 12996502,
+                  "processIdentifier": 19417,
+                  "counter": 5554582
+                },
+                "visited": false
+              }
+            ],
+            "numPaths": 0,
+            "id": {
+              "timestamp": 1462567284,
+              "machineIdentifier": 12996502,
+              "processIdentifier": 19417,
+              "counter": 5554536
+            },
+            "visited": false
+          }
+        ],
+        "numPaths": 0,
+        "id": {
+          "timestamp": 1462567284,
+          "machineIdentifier": 12996502,
+          "processIdentifier": 19417,
+          "counter": 5554532
+        },
+        "visited": false
+      }
+    ],
+    "numPaths": 0,
+    "id": {
+      "timestamp": 1462567284,
+      "machineIdentifier": 12996502,
+      "processIdentifier": 19417,
+      "counter": 5554531
+    },
+    "visited": false
+  },
+  {
+    "name": "Police Department Disposition Of Substantiated Cases By Year Of NYPD Closure 2005 - 2009.json",
+    "children": [
+      {
+        "name": "<cis550bklsARRAY>0: null",
+        "parent": "Police Department Disposition Of Substantiated Cases By Year Of NYPD Closure 2005 - 2009.json",
+        "children": [
+          {
+            "name": "<cis550bklsINDEX>3: null",
+            "parent": "<cis550bklsARRAY>0: null",
+            "children": [
+              {
+                "name": "police_department_disposition: Pleaded guilty",
+                "parent": "<cis550bklsINDEX>3: null",
+                "children": [
+
+                ],
+                "numPaths": 0,
+                "id": {
+                  "timestamp": 1462567284,
+                  "machineIdentifier": 12996502,
+                  "processIdentifier": 19417,
+                  "counter": 5554584
+                },
+                "visited": false
+              }
+            ],
+            "numPaths": 0,
+            "id": {
+              "timestamp": 1462567284,
+              "machineIdentifier": 12996502,
+              "processIdentifier": 19417,
+              "counter": 5554538
+            },
+            "visited": false
+          }
+        ],
+        "numPaths": 0,
+        "id": {
+          "timestamp": 1462567284,
+          "machineIdentifier": 12996502,
+          "processIdentifier": 19417,
+          "counter": 5554532
+        },
+        "visited": false
+      }
+    ],
+    "numPaths": 0,
+    "id": {
+      "timestamp": 1462567284,
+      "machineIdentifier": 12996502,
+      "processIdentifier": 19417,
+      "counter": 5554531
+    },
+    "visited": false
+  },
+  {
+    "name": "Police Department Disposition Of Substantiated Cases By Year Of NYPD Closure 2005 - 2009.json",
+    "children": [
+      {
+        "name": "<cis550bklsARRAY>0: null",
+        "parent": "Police Department Disposition Of Substantiated Cases By Year Of NYPD Closure 2005 - 2009.json",
+        "children": [
+          {
+            "name": "<cis550bklsINDEX>4: null",
+            "parent": "<cis550bklsARRAY>0: null",
+            "children": [
+              {
+                "name": "police_department_disposition:       To charges and specifications",
+                "parent": "<cis550bklsINDEX>4: null",
+                "children": [
+
+                ],
+                "numPaths": 0,
+                "id": {
+                  "timestamp": 1462567284,
+                  "machineIdentifier": 12996502,
+                  "processIdentifier": 19417,
+                  "counter": 5554596
+                },
+                "visited": false
+              }
+            ],
+            "numPaths": 0,
+            "id": {
+              "timestamp": 1462567284,
+              "machineIdentifier": 12996502,
+              "processIdentifier": 19417,
+              "counter": 5554540
+            },
+            "visited": false
+          }
+        ],
+        "numPaths": 0,
+        "id": {
+          "timestamp": 1462567284,
+          "machineIdentifier": 12996502,
+          "processIdentifier": 19417,
+          "counter": 5554532
+        },
+        "visited": false
+      }
+    ],
+    "numPaths": 0,
+    "id": {
+      "timestamp": 1462567284,
+      "machineIdentifier": 12996502,
+      "processIdentifier": 19417,
+      "counter": 5554531
+    },
+    "visited": false
+  },
+  {
+    "name": "Police Department Disposition Of Substantiated Cases By Year Of NYPD Closure 2005 - 2009.json",
+    "children": [
+      {
+        "name": "<cis550bklsARRAY>0: null",
+        "parent": "Police Department Disposition Of Substantiated Cases By Year Of NYPD Closure 2005 - 2009.json",
+        "children": [
+          {
+            "name": "<cis550bklsINDEX>5: null",
+            "parent": "<cis550bklsARRAY>0: null",
+            "children": [
+              {
+                "name": "police_department_disposition:       To charges and specifications",
+                "parent": "<cis550bklsINDEX>5: null",
+                "children": [
+
+                ],
+                "numPaths": 0,
+                "id": {
+                  "timestamp": 1462567284,
+                  "machineIdentifier": 12996502,
+                  "processIdentifier": 19417,
+                  "counter": 5554598
+                },
+                "visited": false
+              }
+            ],
+            "numPaths": 0,
+            "id": {
+              "timestamp": 1462567284,
+              "machineIdentifier": 12996502,
+              "processIdentifier": 19417,
+              "counter": 5554542
+            },
+            "visited": false
+          }
+        ],
+        "numPaths": 0,
+        "id": {
+          "timestamp": 1462567284,
+          "machineIdentifier": 12996502,
+          "processIdentifier": 19417,
+          "counter": 5554532
+        },
+        "visited": false
+      }
+    ],
+    "numPaths": 0,
+    "id": {
+      "timestamp": 1462567284,
+      "machineIdentifier": 12996502,
+      "processIdentifier": 19417,
+      "counter": 5554531
+    },
+    "visited": false
+  },
+  {
+    "name": "Police Department Disposition Of Substantiated Cases By Year Of NYPD Closure 2005 - 2009.json",
+    "children": [
+      {
+        "name": "<cis550bklsARRAY>0: null",
+        "parent": "Police Department Disposition Of Substantiated Cases By Year Of NYPD Closure 2005 - 2009.json",
+        "children": [
+          {
+            "name": "<cis550bklsINDEX>6: null",
+            "parent": "<cis550bklsARRAY>0: null",
+            "children": [
+              {
+                "name": "police_department_disposition:            negotiated as command discipline",
+                "parent": "<cis550bklsINDEX>6: null",
+                "children": [
+
+                ],
+                "numPaths": 0,
+                "id": {
+                  "timestamp": 1462567284,
+                  "machineIdentifier": 12996502,
+                  "processIdentifier": 19417,
+                  "counter": 5554610
+                },
+                "visited": false
+              }
+            ],
+            "numPaths": 0,
+            "id": {
+              "timestamp": 1462567284,
+              "machineIdentifier": 12996502,
+              "processIdentifier": 19417,
+              "counter": 5554544
+            },
+            "visited": false
+          }
+        ],
+        "numPaths": 0,
+        "id": {
+          "timestamp": 1462567284,
+          "machineIdentifier": 12996502,
+          "processIdentifier": 19417,
+          "counter": 5554532
+        },
+        "visited": false
+      }
+    ],
+    "numPaths": 0,
+    "id": {
+      "timestamp": 1462567284,
+      "machineIdentifier": 12996502,
+      "processIdentifier": 19417,
+      "counter": 5554531
+    },
+    "visited": false
+  },
+  {
+    "name": "Police Department Disposition Of Substantiated Cases By Year Of NYPD Closure 2005 - 2009.json",
+    "children": [
+      {
+        "name": "<cis550bklsARRAY>0: null",
+        "parent": "Police Department Disposition Of Substantiated Cases By Year Of NYPD Closure 2005 - 2009.json",
+        "children": [
+          {
+            "name": "<cis550bklsINDEX>7: null",
+            "parent": "<cis550bklsARRAY>0: null",
+            "children": [
+              {
+                "name": "police_department_disposition:       To command discipline",
+                "parent": "<cis550bklsINDEX>7: null",
+                "children": [
+
+                ],
+                "numPaths": 0,
+                "id": {
+                  "timestamp": 1462567284,
+                  "machineIdentifier": 12996502,
+                  "processIdentifier": 19417,
+                  "counter": 5554622
+                },
+                "visited": false
+              }
+            ],
+            "numPaths": 0,
+            "id": {
+              "timestamp": 1462567284,
+              "machineIdentifier": 12996502,
+              "processIdentifier": 19417,
+              "counter": 5554546
+            },
+            "visited": false
+          }
+        ],
+        "numPaths": 0,
+        "id": {
+          "timestamp": 1462567284,
+          "machineIdentifier": 12996502,
+          "processIdentifier": 19417,
+          "counter": 5554532
+        },
+        "visited": false
+      }
+    ],
+    "numPaths": 0,
+    "id": {
+      "timestamp": 1462567284,
+      "machineIdentifier": 12996502,
+      "processIdentifier": 19417,
+      "counter": 5554531
+    },
+    "visited": false
+  },
+  {
+    "name": "Police Department Disposition Of Substantiated Cases By Year Of NYPD Closure 2005 - 2009.json",
+    "children": [
+      {
+        "name": "<cis550bklsARRAY>0: null",
+        "parent": "Police Department Disposition Of Substantiated Cases By Year Of NYPD Closure 2005 - 2009.json",
+        "children": [
+          {
+            "name": "<cis550bklsINDEX>8: null",
+            "parent": "<cis550bklsARRAY>0: null",
+            "children": [
+              {
+                "name": "police_department_disposition: Instructions",
+                "parent": "<cis550bklsINDEX>8: null",
+                "children": [
+
+                ],
+                "numPaths": 0,
+                "id": {
+                  "timestamp": 1462567284,
+                  "machineIdentifier": 12996502,
+                  "processIdentifier": 19417,
+                  "counter": 5554634
+                },
+                "visited": false
+              }
+            ],
+            "numPaths": 0,
+            "id": {
+              "timestamp": 1462567284,
+              "machineIdentifier": 12996502,
+              "processIdentifier": 19417,
+              "counter": 5554548
+            },
+            "visited": false
+          }
+        ],
+        "numPaths": 0,
+        "id": {
+          "timestamp": 1462567284,
+          "machineIdentifier": 12996502,
+          "processIdentifier": 19417,
+          "counter": 5554532
+        },
+        "visited": false
+      }
+    ],
+    "numPaths": 0,
+    "id": {
+      "timestamp": 1462567284,
+      "machineIdentifier": 12996502,
+      "processIdentifier": 19417,
+      "counter": 5554531
+    },
+    "visited": false
+  },
+  {
+    "name": "Police Department Disposition Of Substantiated Cases By Year Of NYPD Closure 2005 - 2009.json",
+    "children": [
+      {
+        "name": "<cis550bklsARRAY>0: null",
+        "parent": "Police Department Disposition Of Substantiated Cases By Year Of NYPD Closure 2005 - 2009.json",
+        "children": [
+          {
+            "name": "<cis550bklsINDEX>9: null",
+            "parent": "<cis550bklsARRAY>0: null",
+            "children": [
+              {
+                "name": "police_department_disposition: Subtotal: Disciplinary Action",
+                "parent": "<cis550bklsINDEX>9: null",
+                "children": [
+
+                ],
+                "numPaths": 0,
+                "id": {
+                  "timestamp": 1462567284,
+                  "machineIdentifier": 12996502,
+                  "processIdentifier": 19417,
+                  "counter": 5554646
+                },
+                "visited": false
+              }
+            ],
+            "numPaths": 0,
+            "id": {
+              "timestamp": 1462567284,
+              "machineIdentifier": 12996502,
+              "processIdentifier": 19417,
+              "counter": 5554550
+            },
+            "visited": false
+          }
+        ],
+        "numPaths": 0,
+        "id": {
+          "timestamp": 1462567284,
+          "machineIdentifier": 12996502,
+          "processIdentifier": 19417,
+          "counter": 5554532
+        },
+        "visited": false
+      }
+    ],
+    "numPaths": 0,
+    "id": {
+      "timestamp": 1462567284,
+      "machineIdentifier": 12996502,
+      "processIdentifier": 19417,
+      "counter": 5554531
+    },
+    "visited": false
+  },
+  {
+    "name": "Police Department Disposition Of Substantiated Cases By Year Of NYPD Closure 2005 - 2009.json",
+    "children": [
+      {
+        "name": "<cis550bklsARRAY>0: null",
+        "parent": "Police Department Disposition Of Substantiated Cases By Year Of NYPD Closure 2005 - 2009.json",
+        "children": [
+          {
+            "name": "<cis550bklsINDEX>10: null",
+            "parent": "<cis550bklsARRAY>0: null",
+            "children": [
+              {
+                "name": "police_department_disposition: Not guilty after trial",
+                "parent": "<cis550bklsINDEX>10: null",
+                "children": [
+
+                ],
+                "numPaths": 0,
+                "id": {
+                  "timestamp": 1462567284,
+                  "machineIdentifier": 12996502,
+                  "processIdentifier": 19417,
+                  "counter": 5554658
+                },
+                "visited": false
+              }
+            ],
+            "numPaths": 0,
+            "id": {
+              "timestamp": 1462567284,
+              "machineIdentifier": 12996502,
+              "processIdentifier": 19417,
+              "counter": 5554552
+            },
+            "visited": false
+          }
+        ],
+        "numPaths": 0,
+        "id": {
+          "timestamp": 1462567284,
+          "machineIdentifier": 12996502,
+          "processIdentifier": 19417,
+          "counter": 5554532
+        },
+        "visited": false
+      }
+    ],
+    "numPaths": 0,
+    "id": {
+      "timestamp": 1462567284,
+      "machineIdentifier": 12996502,
+      "processIdentifier": 19417,
+      "counter": 5554531
+    },
+    "visited": false
+  },
+  {
+    "name": "Police Department Disposition Of Substantiated Cases By Year Of NYPD Closure 2005 - 2009.json",
+    "children": [
+      {
+        "name": "<cis550bklsARRAY>0: null",
+        "parent": "Police Department Disposition Of Substantiated Cases By Year Of NYPD Closure 2005 - 2009.json",
+        "children": [
+          {
+            "name": "<cis550bklsINDEX>11: null",
+            "parent": "<cis550bklsARRAY>0: null",
+            "children": [
+              {
+                "name": "police_department_disposition: Dismissed",
+                "parent": "<cis550bklsINDEX>11: null",
+                "children": [
+
+                ],
+                "numPaths": 0,
+                "id": {
+                  "timestamp": 1462567284,
+                  "machineIdentifier": 12996502,
+                  "processIdentifier": 19417,
+                  "counter": 5554670
+                },
+                "visited": false
+              }
+            ],
+            "numPaths": 0,
+            "id": {
+              "timestamp": 1462567284,
+              "machineIdentifier": 12996502,
+              "processIdentifier": 19417,
+              "counter": 5554554
+            },
+            "visited": false
+          }
+        ],
+        "numPaths": 0,
+        "id": {
+          "timestamp": 1462567284,
+          "machineIdentifier": 12996502,
+          "processIdentifier": 19417,
+          "counter": 5554532
+        },
+        "visited": false
+      }
+    ],
+    "numPaths": 0,
+    "id": {
+      "timestamp": 1462567284,
+      "machineIdentifier": 12996502,
+      "processIdentifier": 19417,
+      "counter": 5554531
+    },
+    "visited": false
+  },
+  {
+    "name": "Police Department Disposition Of Substantiated Cases By Year Of NYPD Closure 2005 - 2009.json",
+    "children": [
+      {
+        "name": "<cis550bklsARRAY>0: null",
+        "parent": "Police Department Disposition Of Substantiated Cases By Year Of NYPD Closure 2005 - 2009.json",
+        "children": [
+          {
+            "name": "<cis550bklsINDEX>12: null",
+            "parent": "<cis550bklsARRAY>0: null",
+            "children": [
+              {
+                "name": "police_department_disposition: Statute of limitations expired",
+                "parent": "<cis550bklsINDEX>12: null",
+                "children": [
+
+                ],
+                "numPaths": 0,
+                "id": {
+                  "timestamp": 1462567284,
+                  "machineIdentifier": 12996502,
+                  "processIdentifier": 19417,
+                  "counter": 5554682
+                },
+                "visited": false
+              }
+            ],
+            "numPaths": 0,
+            "id": {
+              "timestamp": 1462567284,
+              "machineIdentifier": 12996502,
+              "processIdentifier": 19417,
+              "counter": 5554556
+            },
+            "visited": false
+          }
+        ],
+        "numPaths": 0,
+        "id": {
+          "timestamp": 1462567284,
+          "machineIdentifier": 12996502,
+          "processIdentifier": 19417,
+          "counter": 5554532
+        },
+        "visited": false
+      }
+    ],
+    "numPaths": 0,
+    "id": {
+      "timestamp": 1462567284,
+      "machineIdentifier": 12996502,
+      "processIdentifier": 19417,
+      "counter": 5554531
+    },
+    "visited": false
+  },
+  {
+    "name": "Police Department Disposition Of Substantiated Cases By Year Of NYPD Closure 2005 - 2009.json",
+    "children": [
+      {
+        "name": "<cis550bklsARRAY>0: null",
+        "parent": "Police Department Disposition Of Substantiated Cases By Year Of NYPD Closure 2005 - 2009.json",
+        "children": [
+          {
+            "name": "<cis550bklsINDEX>13: null",
+            "parent": "<cis550bklsARRAY>0: null",
+            "children": [
+              {
+                "name": "police_department_disposition: Department unable to prosecute",
+                "parent": "<cis550bklsINDEX>13: null",
+                "children": [
+
+                ],
+                "numPaths": 0,
+                "id": {
+                  "timestamp": 1462567284,
+                  "machineIdentifier": 12996502,
+                  "processIdentifier": 19417,
+                  "counter": 5554694
+                },
+                "visited": false
+              }
+            ],
+            "numPaths": 0,
+            "id": {
+              "timestamp": 1462567284,
+              "machineIdentifier": 12996502,
+              "processIdentifier": 19417,
+              "counter": 5554558
+            },
+            "visited": false
+          }
+        ],
+        "numPaths": 0,
+        "id": {
+          "timestamp": 1462567284,
+          "machineIdentifier": 12996502,
+          "processIdentifier": 19417,
+          "counter": 5554532
+        },
+        "visited": false
+      }
+    ],
+    "numPaths": 0,
+    "id": {
+      "timestamp": 1462567284,
+      "machineIdentifier": 12996502,
+      "processIdentifier": 19417,
+      "counter": 5554531
+    },
+    "visited": false
+  },
+  {
+    "name": "Police Department Disposition Of Substantiated Cases By Year Of NYPD Closure 2005 - 2009.json",
+    "children": [
+      {
+        "name": "<cis550bklsARRAY>0: null",
+        "parent": "Police Department Disposition Of Substantiated Cases By Year Of NYPD Closure 2005 - 2009.json",
+        "children": [
+          {
+            "name": "<cis550bklsINDEX>14: null",
+            "parent": "<cis550bklsARRAY>0: null",
+            "children": [
+              {
+                "name": "police_department_disposition: Subtotal: No Disciplinary Action",
+                "parent": "<cis550bklsINDEX>14: null",
+                "children": [
+
+                ],
+                "numPaths": 0,
+                "id": {
+                  "timestamp": 1462567284,
+                  "machineIdentifier": 12996502,
+                  "processIdentifier": 19417,
+                  "counter": 5554706
+                },
+                "visited": false
+              }
+            ],
+            "numPaths": 0,
+            "id": {
+              "timestamp": 1462567284,
+              "machineIdentifier": 12996502,
+              "processIdentifier": 19417,
+              "counter": 5554560
+            },
+            "visited": false
+          }
+        ],
+        "numPaths": 0,
+        "id": {
+          "timestamp": 1462567284,
+          "machineIdentifier": 12996502,
+          "processIdentifier": 19417,
+          "counter": 5554532
+        },
+        "visited": false
+      }
+    ],
+    "numPaths": 0,
+    "id": {
+      "timestamp": 1462567284,
+      "machineIdentifier": 12996502,
+      "processIdentifier": 19417,
+      "counter": 5554531
+    },
+    "visited": false
+  },
+  {
+    "name": "Police Department Disposition Of Substantiated Cases By Year Of NYPD Closure 2005 - 2009.json",
+    "children": [
+      {
+        "name": "<cis550bklsARRAY>0: null",
+        "parent": "Police Department Disposition Of Substantiated Cases By Year Of NYPD Closure 2005 - 2009.json",
+        "children": [
+          {
+            "name": "<cis550bklsINDEX>15: null",
+            "parent": "<cis550bklsARRAY>0: null",
+            "children": [
+              {
+                "name": "police_department_disposition: Total Number of Closed Cases",
+                "parent": "<cis550bklsINDEX>15: null",
+                "children": [
+
+                ],
+                "numPaths": 0,
+                "id": {
+                  "timestamp": 1462567284,
+                  "machineIdentifier": 12996502,
+                  "processIdentifier": 19417,
+                  "counter": 5554718
+                },
+                "visited": false
+              }
+            ],
+            "numPaths": 0,
+            "id": {
+              "timestamp": 1462567284,
+              "machineIdentifier": 12996502,
+              "processIdentifier": 19417,
+              "counter": 5554562
+            },
+            "visited": false
+          }
+        ],
+        "numPaths": 0,
+        "id": {
+          "timestamp": 1462567284,
+          "machineIdentifier": 12996502,
+          "processIdentifier": 19417,
+          "counter": 5554532
+        },
+        "visited": false
+      }
+    ],
+    "numPaths": 0,
+    "id": {
+      "timestamp": 1462567284,
+      "machineIdentifier": 12996502,
+      "processIdentifier": 19417,
+      "counter": 5554531
+    },
+    "visited": false
+  },
+  {
+    "name": "Police Department Disposition Of Substantiated Cases By Year Of NYPD Closure 2005 - 2009.json",
+    "children": [
+      {
+        "name": "<cis550bklsARRAY>0: null",
+        "parent": "Police Department Disposition Of Substantiated Cases By Year Of NYPD Closure 2005 - 2009.json",
+        "children": [
+          {
+            "name": "<cis550bklsINDEX>16: null",
+            "parent": "<cis550bklsARRAY>0: null",
+            "children": [
+              {
+                "name": "police_department_disposition: Filed*",
+                "parent": "<cis550bklsINDEX>16: null",
+                "children": [
+
+                ],
+                "numPaths": 0,
+                "id": {
+                  "timestamp": 1462567284,
+                  "machineIdentifier": 12996502,
+                  "processIdentifier": 19417,
+                  "counter": 5554730
+                },
+                "visited": false
+              }
+            ],
+            "numPaths": 0,
+            "id": {
+              "timestamp": 1462567284,
+              "machineIdentifier": 12996502,
+              "processIdentifier": 19417,
+              "counter": 5554564
+            },
+            "visited": false
+          }
+        ],
+        "numPaths": 0,
+        "id": {
+          "timestamp": 1462567284,
+          "machineIdentifier": 12996502,
+          "processIdentifier": 19417,
+          "counter": 5554532
+        },
+        "visited": false
+      }
+    ],
+    "numPaths": 0,
+    "id": {
+      "timestamp": 1462567284,
+      "machineIdentifier": 12996502,
+      "processIdentifier": 19417,
+      "counter": 5554531
+    },
+    "visited": false
+  },
+  {
+    "name": "Police Department Disposition Of Substantiated Cases By Year Of NYPD Closure 2005 - 2009.json",
+    "children": [
+      {
+        "name": "<cis550bklsARRAY>0: null",
+        "parent": "Police Department Disposition Of Substantiated Cases By Year Of NYPD Closure 2005 - 2009.json",
+        "children": [
+          {
+            "name": "<cis550bklsINDEX>17: null",
+            "parent": "<cis550bklsARRAY>0: null",
+            "children": [
+              {
+                "name": "police_department_disposition: Total Number of Processed Cases",
+                "parent": "<cis550bklsINDEX>17: null",
+                "children": [
+
+                ],
+                "numPaths": 0,
+                "id": {
+                  "timestamp": 1462567284,
+                  "machineIdentifier": 12996502,
+                  "processIdentifier": 19417,
+                  "counter": 5554742
+                },
+                "visited": false
+              }
+            ],
+            "numPaths": 0,
+            "id": {
+              "timestamp": 1462567284,
+              "machineIdentifier": 12996502,
+              "processIdentifier": 19417,
+              "counter": 5554566
+            },
+            "visited": false
+          }
+        ],
+        "numPaths": 0,
+        "id": {
+          "timestamp": 1462567284,
+          "machineIdentifier": 12996502,
+          "processIdentifier": 19417,
+          "counter": 5554532
+        },
+        "visited": false
+      }
+    ],
+    "numPaths": 0,
+    "id": {
+      "timestamp": 1462567284,
+      "machineIdentifier": 12996502,
+      "processIdentifier": 19417,
+      "counter": 5554531
+    },
+    "visited": false
+  },
+  {
+    "name": "Police Department Disposition Of Substantiated Cases By Year Of NYPD Closure 2005 - 2009.json",
+    "children": [
+      {
+        "name": "<cis550bklsARRAY>0: null",
+        "parent": "Police Department Disposition Of Substantiated Cases By Year Of NYPD Closure 2005 - 2009.json",
+        "children": [
+          {
+            "name": "<cis550bklsINDEX>18: null",
+            "parent": "<cis550bklsARRAY>0: null",
+            "children": [
+              {
+                "name": "police_department_disposition: * \"Filed\" is a term used when the police department is not required to take action against the subject officer because the officer has resigned or retired from the department, or has been terminated.",
+                "parent": "<cis550bklsINDEX>18: null",
+                "children": [
+
+                ],
+                "numPaths": 0,
+                "id": {
+                  "timestamp": 1462567284,
+                  "machineIdentifier": 12996502,
+                  "processIdentifier": 19417,
+                  "counter": 5554744
+                },
+                "visited": false
+              }
+            ],
+            "numPaths": 0,
+            "id": {
+              "timestamp": 1462567284,
+              "machineIdentifier": 12996502,
+              "processIdentifier": 19417,
+              "counter": 5554568
+            },
+            "visited": false
+          }
+        ],
+        "numPaths": 0,
+        "id": {
+          "timestamp": 1462567284,
+          "machineIdentifier": 12996502,
+          "processIdentifier": 19417,
+          "counter": 5554532
+        },
+        "visited": false
+      }
+    ],
+    "numPaths": 0,
+    "id": {
+      "timestamp": 1462567284,
+      "machineIdentifier": 12996502,
+      "processIdentifier": 19417,
+      "counter": 5554531
+    },
+    "visited": false
+  },
+  {
+    "name": "Disposition Of Discourtesy Allegations 2009.json",
+    "children": [
+
+    ],
+    "numPaths": 0,
+    "id": {
+      "timestamp": 1462567294,
+      "machineIdentifier": 12996502,
+      "processIdentifier": 19417,
+      "counter": 5646578
+    },
+    "visited": false
+  },
+  {
+    "name": "2011 Disciplinary Actions Filing Representative (formerly Expediter).csv",
+    "children": [
+      {
+        "name": "<cis550bklsARRAY>0: null",
+        "parent": "2011 Disciplinary Actions Filing Representative (formerly Expediter).csv",
+        "children": [
+          {
+            "name": "<cis550bklsINDEX>1: null",
+            "parent": "<cis550bklsARRAY>0: null",
+            "children": [
+              {
+                "name": "Disposition: Permanently Surrendered Registration.",
+                "parent": "<cis550bklsINDEX>1: null",
+                "children": [
+
+                ],
+                "numPaths": 0,
+                "id": {
+                  "timestamp": 1462567315,
+                  "machineIdentifier": 12996502,
+                  "processIdentifier": 19417,
+                  "counter": 5828263
+                },
+                "visited": false
+              }
+            ],
+            "numPaths": 0,
+            "id": {
+              "timestamp": 1462567315,
+              "machineIdentifier": 12996502,
+              "processIdentifier": 19417,
+              "counter": 5828249
+            },
+            "visited": false
+          }
+        ],
+        "numPaths": 0,
+        "id": {
+          "timestamp": 1462567315,
+          "machineIdentifier": 12996502,
+          "processIdentifier": 19417,
+          "counter": 5828247
+        },
+        "visited": false
+      }
+    ],
+    "numPaths": 0,
+    "id": {
+      "timestamp": 1462567314,
+      "machineIdentifier": 12996502,
+      "processIdentifier": 19417,
+      "counter": 5828246
+    },
+    "visited": false
+  },
+  {
+    "name": "2011 Disciplinary Actions Filing Representative (formerly Expediter).csv",
+    "children": [
+      {
+        "name": "<cis550bklsARRAY>0: null",
+        "parent": "2011 Disciplinary Actions Filing Representative (formerly Expediter).csv",
+        "children": [
+          {
+            "name": "<cis550bklsINDEX>2: null",
+            "parent": "<cis550bklsARRAY>0: null",
+            "children": [
+              {
+                "name": "Disposition: Voluntarily Surrendered Registration.",
+                "parent": "<cis550bklsINDEX>2: null",
+                "children": [
+
+                ],
+                "numPaths": 0,
+                "id": {
+                  "timestamp": 1462567315,
+                  "machineIdentifier": 12996502,
+                  "processIdentifier": 19417,
+                  "counter": 5828269
+                },
+                "visited": false
+              }
+            ],
+            "numPaths": 0,
+            "id": {
+              "timestamp": 1462567315,
+              "machineIdentifier": 12996502,
+              "processIdentifier": 19417,
+              "counter": 5828251
+            },
+            "visited": false
+          }
+        ],
+        "numPaths": 0,
+        "id": {
+          "timestamp": 1462567315,
+          "machineIdentifier": 12996502,
+          "processIdentifier": 19417,
+          "counter": 5828247
+        },
+        "visited": false
+      }
+    ],
+    "numPaths": 0,
+    "id": {
+      "timestamp": 1462567314,
+      "machineIdentifier": 12996502,
+      "processIdentifier": 19417,
+      "counter": 5828246
+    },
+    "visited": false
+  },
+  {
+    "name": "2011 Disciplinary Actions Filing Representative (formerly Expediter).csv",
+    "children": [
+      {
+        "name": "<cis550bklsARRAY>0: null",
+        "parent": "2011 Disciplinary Actions Filing Representative (formerly Expediter).csv",
+        "children": [
+          {
+            "name": "<cis550bklsINDEX>3: null",
+            "parent": "<cis550bklsARRAY>0: null",
+            "children": [
+              {
+                "name": "Disposition: Permanently Surrendered Registration.",
+                "parent": "<cis550bklsINDEX>3: null",
+                "children": [
+
+                ],
+                "numPaths": 0,
+                "id": {
+                  "timestamp": 1462567315,
+                  "machineIdentifier": 12996502,
+                  "processIdentifier": 19417,
+                  "counter": 5828275
+                },
+                "visited": false
+              }
+            ],
+            "numPaths": 0,
+            "id": {
+              "timestamp": 1462567315,
+              "machineIdentifier": 12996502,
+              "processIdentifier": 19417,
+              "counter": 5828253
+            },
+            "visited": false
+          }
+        ],
+        "numPaths": 0,
+        "id": {
+          "timestamp": 1462567315,
+          "machineIdentifier": 12996502,
+          "processIdentifier": 19417,
+          "counter": 5828247
+        },
+        "visited": false
+      }
+    ],
+    "numPaths": 0,
+    "id": {
+      "timestamp": 1462567314,
+      "machineIdentifier": 12996502,
+      "processIdentifier": 19417,
+      "counter": 5828246
+    },
+    "visited": false
+  },
+  {
+    "name": "2011 Disciplinary Actions Filing Representative (formerly Expediter).csv",
+    "children": [
+      {
+        "name": "<cis550bklsARRAY>0: null",
+        "parent": "2011 Disciplinary Actions Filing Representative (formerly Expediter).csv",
+        "children": [
+          {
+            "name": "<cis550bklsINDEX>4: null",
+            "parent": "<cis550bklsARRAY>0: null",
+            "children": [
+              {
+                "name": "Disposition: Fine, 6 month probation.",
+                "parent": "<cis550bklsINDEX>4: null",
+                "children": [
+
+                ],
+                "numPaths": 0,
+                "id": {
+                  "timestamp": 1462567315,
+                  "machineIdentifier": 12996502,
+                  "processIdentifier": 19417,
+                  "counter": 5828281
+                },
+                "visited": false
+              }
+            ],
+            "numPaths": 0,
+            "id": {
+              "timestamp": 1462567315,
+              "machineIdentifier": 12996502,
+              "processIdentifier": 19417,
+              "counter": 5828255
+            },
+            "visited": false
+          }
+        ],
+        "numPaths": 0,
+        "id": {
+          "timestamp": 1462567315,
+          "machineIdentifier": 12996502,
+          "processIdentifier": 19417,
+          "counter": 5828247
+        },
+        "visited": false
+      }
+    ],
+    "numPaths": 0,
+    "id": {
+      "timestamp": 1462567314,
+      "machineIdentifier": 12996502,
+      "processIdentifier": 19417,
+      "counter": 5828246
+    },
+    "visited": false
+  },
+  {
+    "name": "2011 Disciplinary Actions Filing Representative (formerly Expediter).csv",
+    "children": [
+      {
+        "name": "<cis550bklsARRAY>0: null",
+        "parent": "2011 Disciplinary Actions Filing Representative (formerly Expediter).csv",
+        "children": [
+          {
+            "name": "<cis550bklsINDEX>5: null",
+            "parent": "<cis550bklsARRAY>0: null",
+            "children": [
+              {
+                "name": "Disposition: Probation until 12\/21\/2011.",
+                "parent": "<cis550bklsINDEX>5: null",
+                "children": [
+
+                ],
+                "numPaths": 0,
+                "id": {
+                  "timestamp": 1462567315,
+                  "machineIdentifier": 12996502,
+                  "processIdentifier": 19417,
+                  "counter": 5828287
+                },
+                "visited": false
+              }
+            ],
+            "numPaths": 0,
+            "id": {
+              "timestamp": 1462567315,
+              "machineIdentifier": 12996502,
+              "processIdentifier": 19417,
+              "counter": 5828257
+            },
+            "visited": false
+          }
+        ],
+        "numPaths": 0,
+        "id": {
+          "timestamp": 1462567315,
+          "machineIdentifier": 12996502,
+          "processIdentifier": 19417,
+          "counter": 5828247
+        },
+        "visited": false
+      }
+    ],
+    "numPaths": 0,
+    "id": {
+      "timestamp": 1462567314,
+      "machineIdentifier": 12996502,
+      "processIdentifier": 19417,
+      "counter": 5828246
+    },
+    "visited": false
+  },
+  {
+    "name": "2011 Disciplinary Actions Filing Representative (formerly Expediter).csv",
+    "children": [
+      {
+        "name": "<cis550bklsARRAY>0: null",
+        "parent": "2011 Disciplinary Actions Filing Representative (formerly Expediter).csv",
+        "children": [
+          {
+            "name": "<cis550bklsINDEX>6: null",
+            "parent": "<cis550bklsARRAY>0: null",
+            "children": [
+              {
+                "name": "Disposition: Fine and 1 year probation.",
+                "parent": "<cis550bklsINDEX>6: null",
+                "children": [
+
+                ],
+                "numPaths": 0,
+                "id": {
+                  "timestamp": 1462567315,
+                  "machineIdentifier": 12996502,
+                  "processIdentifier": 19417,
+                  "counter": 5828293
+                },
+                "visited": false
+              }
+            ],
+            "numPaths": 0,
+            "id": {
+              "timestamp": 1462567315,
+              "machineIdentifier": 12996502,
+              "processIdentifier": 19417,
+              "counter": 5828259
+            },
+            "visited": false
+          }
+        ],
+        "numPaths": 0,
+        "id": {
+          "timestamp": 1462567315,
+          "machineIdentifier": 12996502,
+          "processIdentifier": 19417,
+          "counter": 5828247
+        },
+        "visited": false
+      }
+    ],
+    "numPaths": 0,
+    "id": {
+      "timestamp": 1462567314,
+      "machineIdentifier": 12996502,
+      "processIdentifier": 19417,
+      "counter": 5828246
+    },
+    "visited": false
+  }
+]

@@ -642,10 +642,10 @@ hr {
 /* Padding for spacing */
 .inner-cover {
   /*padding-top: 100px;*/
-  position: fixed;
+  position: relative;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, 70%);
 }
 
 .in-panel {
@@ -659,8 +659,8 @@ hr {
 .mastfoot {
   color: #999; /* IE8 proofing */
   color: rgba(255,255,255,.5);
-  position: fixed;
-  top: 95%;
+  position: absolute;
+  // top: 95%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -672,11 +672,11 @@ hr {
 @media (min-width: 768px) {
   /* Pull out the header and footer */
   .masthead {
-    position: fixed;
+    position: absolute;
     top: 0;
   }
   .mastfoot {
-    position: fixed;
+    position: absolute;
     top: 95%;
     left: 50%;
     transform: translate(-50%, -50%);

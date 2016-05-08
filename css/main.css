@@ -48,22 +48,53 @@ img {
   }
 }
 .fcite {
-  font-size: 13px;
+  font-size: 14px;
   color: #16a085;
 }
+
 .ucontent {
   text-align:center;
   vertical-align: middle;
-  font-size: 14px;
+  font-size: 15px;
   line-height: 20px;
   padding-left: 2px;
   padding-right: 2px;
 }
+
+.ucontent-longer {
+  text-align:center;
+  vertical-align: middle;
+  font-size: 15px;
+  line-height: 20px;
+  padding-left: 2px;
+  padding-right: 2px;
+}
+
 .aside {
   text-align: left;
   padding-left: 15px;
   padding-right: 15px;
+  font-size: 15px;
+  line-height: 20px;
 }
+
+.flatten {
+  text-align: left;
+  position: relative;
+  left: 40px;
+}
+
+.img-flatten {
+  float: left;
+  width: 300px;
+}
+
+.fcite-flatten {
+  text-align: left;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
 .navbar {
   margin-bottom: 5px !important;
 }

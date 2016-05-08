@@ -740,7 +740,10 @@ $(".ret-page").click(function() {
 
 // GO TO FUNCTIONALITY
 $("#go-to-pg").keydown(function(event) {
-  if (typeof(this.value) == "number" && event.keyCode == 13) {
+  if (event.keyCode == 13) {
+    if (isNaN(parseInt(this.value))) {
+      return;
+    }
     if (this.value > 0 && this.value <= max) {
       var diff = this.value - x;
       if (diff > 0) {
@@ -763,7 +766,7 @@ $("#go-to-pg").keydown(function(event) {
 });
 $("#go-to-click").click(function(e) {
   var y = $("#go-to-pg").val();
-  if (typeof(y) == "number") {
+  if (!isNaN(parseInt(y))) {
     if (y > 0 && y <= max) {
       var diff = y - x;
       if (diff > 0) {
